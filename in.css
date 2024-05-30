@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  font-family: 'segoe ui';
+  background-color: rgba(251, 245, 236, 0.929);
+  font-family: " NSW ACT Foundation";
+  font-optical-sizing: auto;
+  font-style: normal;
+  position: relative;
+}
+.whatsapp{
+  font-size:50px;
+  color: green;
+  position:fixed;
+  bottom: 70px;
+  right: 0;
+  background-color: rgb(190, 180, 183);
+  border-radius: 15px;
+  animation: myAnim 3s ease-out 0s 3 normal none;
+}
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.panel, .flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+.panel {
+  padding: 50px;
+  display: none;
+}
+.head {
+  padding-top: 10px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal
+}
+
+.navbar {
+  background-color: black;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal
+}
+.navbar:hover{
+  background-color: white;
+  cursor: pointer;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+}
+
+#tg {
+  margin: 30px;
+  width: 80px;
+  height: 80px;
+  display: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(238, 237, 237);
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+}
+
+.call {
+  margin: 5px;
+  /* position: absolute;
+    top: 20px;
+    right: 0px; */
+  /* rotate: 90deg; */
+  /* z-index: 10; */
+  animation: myAnim 3s ease-out 0s infinite normal none;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+.nav,
+.nav-link:hover {
+  color: red;
+}
+
+.btn-danger {
+  margin-top: 15px;
+}
+
+#section1 {
+  background-color: #afc9dc;
+}
+
+.slide2 {
+  padding: 15px;
+}
+
+.name {
+  text-align: center;
+  color: rgb(18, 12, 12);
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 7px;
+  margin-top: 10px;
+}
+
+.head2 {
+  text-align: center;
+}
+
+.disbt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: aliceblue;
+  /* position: relative; */
+}
+
+.btn-lg {
+  margin-bottom: 8px;
+}
+
+.topcrousel {
+  margin-top: 10px;
+}
+
+.cards {
+  text-align: center;
+  padding: 20px;
+  /* padding-left: 10px; */
+  /* margin-left: 10px; */
+  background-color: #232323;
+}
+
+.simg {
+  margin-bottom: 15px;
+}
+
+.card {
+  margin: 8px;
+}
+
+.back {
+  /* background-image: url("plant-image-desktop.jpg");
+background-size: cover;
+background-repeat: no-repeat; */
+  background-color: #fff0EB;
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.about {
+  text-align: center;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.tex {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: justify;
+}
+
+.head3 {
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.service {
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+
+.yes {
+  text-align: center;
+}
+
+.servi {
+  text-align: center;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .nav,
+  .nav-item {
+    display: block;
+  }
+
+  .head {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #tg {
+    display: block;
+    margin-left: 30px;
+  }
+
+  #logo {
+    width: 90px;
+    height: 70px;
+    margin-top: 20px;
+  }
+
+  .toggle {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    display: none;
+    text-align: center;
+  }
+
+  .servi {
+    margin-left: 8px;
+  }
+}
