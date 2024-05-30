@@ -303,6 +303,9 @@ background-repeat: no-repeat; */
     display: flex;
     justify-content: space-between;
   }
+.card{
+	width:14rem;
+}
 
   .navbar {
     display: none;
